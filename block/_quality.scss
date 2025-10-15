@@ -1,0 +1,27 @@
+.quality {
+  flex-direction: column;
+  gap: 5px;
+
+  
+
+  &__logos-div {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  .quality {
+    width: 90%;
+  }
+
+  .smart__title {
+    width: 100%;
+    font-size: 27px;
+  }
+}

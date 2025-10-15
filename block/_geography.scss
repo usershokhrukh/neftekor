@@ -1,0 +1,24 @@
+.geography {
+  @include display();
+  flex-direction: column;
+  gap: 23px;
+  padding: 50px 160px;
+  border-radius: 50%;
+  background-color: #F8F8F8;
+
+  &__location {
+    width: 80%;
+    border-radius: 30px;
+    border: 1px dashed #DBA833;
+  }
+}
+
+@media (max-width: 1200px) {
+  .geography{
+    position: relative;
+    border-radius: 30px;
+    width: 90%;
+    padding: 50px 17px;
+  }
+
+}

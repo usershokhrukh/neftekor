@@ -1,0 +1,93 @@
+.intro {
+  height: 900px;
+  width: 100%;
+  @include display();
+  flex-direction: column;
+  padding: 174px 160px;
+  background-color: rgba(0, 0, 0, 0.774);
+  gap: 20px;
+  box-shadow: 0px 0px 60000px 300px rgba(0, 0, 0, 0.774);
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    & span {
+      color: #DBA833;
+    }
+  }
+
+  &__text {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #CECECE;
+
+
+  }
+
+  &__button {
+    @include button(#DBA833, white, 60px , 15px);
+    border: none;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__map {
+    position: relative;
+    bottom: 600px;
+    right: 100px;
+    z-index: -1;
+
+  }
+  &__bottom {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bottom-title {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    width: 90%;
+    height: 400px;
+    padding: 50px 0px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__title {
+      max-width: 500px;
+      font-size: 32px;
+      line-height: 100%;
+    }
+
+    &__map {
+      display: none;
+    }
+    &__button {
+      @include button(#DBA833, white, 39px , 14px);
+      border: none;
+    }
+  }
+}

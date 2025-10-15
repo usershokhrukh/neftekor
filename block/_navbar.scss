@@ -1,0 +1,121 @@
+header {
+  position: relative;
+  z-index: 4;
+  background-image: url(../images/introbg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 100px 0px;
+}
+
+.navbar {
+  @include display();
+  width: 100%;
+  padding: 10px 160px;
+  gap: 30px;
+  // justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+
+  &__right {
+    @include display();
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__right-top {
+    padding: 5px;
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+  }
+
+  &__list {
+    @include display();
+    gap: 37px;
+  }
+
+  &__right-bottom {
+    @include display();
+    width: 100%;
+  }
+
+  &__right-bottom-items {
+    @include display();
+    gap: 6px;
+  }
+
+  &__link {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+
+
+  }
+
+  &__right-bottom-text {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #B6B6B6;
+
+
+  }
+
+  &__burger {
+    @include display();
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+  }
+
+  &__burger-items {
+    width: 40px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    width: 90%;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__right-top {
+      display: none;
+    }
+
+    &__list {
+      display: none;
+    }
+    &__right-bottom {
+      width: 128px;
+      flex-direction: column;
+      gap: 10px;
+
+      & svg {
+        width: 18px;
+      }
+    }
+
+    &__right-bottom-text {
+      font-size: 10px;
+    }
+
+    &__burger {
+      display: flex;
+    }
+
+
+  }
+}

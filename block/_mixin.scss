@@ -1,0 +1,13 @@
+@mixin display() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin button($bg, $color, $x-padding, $y-padding) {
+  background-color: $bg;
+  color: $color;
+  padding: $y-padding $x-padding;
+  border-radius: 10px;
+  border: 1px solid $color;
+}
