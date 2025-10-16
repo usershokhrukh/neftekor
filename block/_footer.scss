@@ -1,0 +1,156 @@
+.footer {
+  @include display();
+  padding: 50px 160px;
+  flex-direction: column;
+  margin-top: -5px;
+  // background-color: red;
+
+  &__top {
+    @include display();
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  &__top-yellow {
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  &__yellow-text {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #DBA833;
+
+
+  }
+
+  &__top-left {
+    @include display();
+    gap: 18px;
+  }
+
+  &__top-center {
+    @include display();
+    gap: 60px;
+  }
+
+  &__top-center-left-right {
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+  }
+
+  &__links{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #5B5B5B;
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__top-right {
+    @include display();
+    flex-direction: column;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: 1px solid #5B5B5B;
+    gap: 6px;
+    background-color: white;
+  }
+
+  &__bottom {
+    @include display();
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 1px dashed #5B5B5B;
+  }
+
+  &__bottom-left {
+    @include display();
+    gap: 50px;
+  }
+
+  &__text {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+
+  }
+
+  &__bottom-right {
+    @include display();
+    gap: 25px;
+  }
+
+  &__icons-box {
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #DBA833;
+  }
+
+  &__icons-box-wrapper {
+    @include display();
+    gap: 18px;
+  }
+}
+
+@media (max-width:1200px) {
+  .footer {
+    padding: 33px;
+    width: 90%;
+    // gap: 20px;
+
+    &__top {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__top-right {
+      width: 100%;
+
+    }
+
+    &__bottom {
+      flex-wrap: wrap-reverse;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    &__bottom-right {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__bottom-left {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
