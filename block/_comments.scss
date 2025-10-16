@@ -1,0 +1,108 @@
+.comments {
+  @include display();
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F8F8F8;
+  padding: 25px 94px;
+  border: 1px dashed #DBA833;
+  border-radius: 30px;
+
+  &__wrapper {
+    padding: 0px 160px;
+  }
+
+  &__card {
+    @include display();
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__items {
+    @include display();
+    position: relative;
+    width: 100%;
+    gap: 30px;
+    border-radius: 30px;
+    border: 1px solid ;
+    padding: 30px 40px 30px 90px;
+    background-color: white;
+  }
+
+  &__box {
+    @include display();
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__items-text {
+    text-align: start;
+  }
+
+  &__items-top-text {
+        /* Наведите, чтобы посмотреть письмо */
+
+    position: absolute;
+    width: 233px;
+    left: -60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #B6B6B6;
+
+    transform: rotate(-90deg);
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .comments {
+    width: 90%;
+    gap: 10px;
+    padding: 15px 10px;
+    &__wrapper {
+      padding: 0px
+    }
+
+    &__card {
+      width: 100%;
+      flex-direction: row;
+      overflow: auto;
+      gap: 5px;
+      padding: 0px 0px 20px 0px;
+    }
+
+    &__card img {
+      display: none;
+    }
+
+    &__items-top-text {
+      display: none;
+    }
+
+    &__items {
+      min-width: 320px;
+      padding: 20px 25px;
+      align-items: center;
+    }
+
+    &__items-title {
+      font-size: 20px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+
+    &__items-text {
+      font-size: 14px;
+      text-align: center;
+      line-height: 100%;
+    }
+
+    
+  }
+}

@@ -1,0 +1,130 @@
+.news {
+  @include display();
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 30px;
+  padding: 0px 160px;
+
+  &__card {
+    @include display();
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  &__items {
+    @include display();
+    max-width: 320px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 0px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  &__items-top-box {
+    @include display();
+    justify-content: center;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid black;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  &__items-title {
+    width: 100%;
+    height: 24px;
+    padding: 0px 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  &__text {
+    width: 100%;
+    // height: 95px;
+    padding: 0px 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #5B5B5B;
+
+  }
+
+  &__button {
+    @include button(white, #DBA833, 89px, 10px);
+    font-family: "Inter";
+    font-weight: 700;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__bottom-button {
+    @include button(white, #DBA833, 61px, 13px);
+    // width: 100%;
+    margin-top: 10px;
+    font-weight: 900;
+    font-family: "Inter";
+    border: 2px solid #DBA833;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+  
+
+}
+
+@media (max-width: 1200px) {
+  .news {
+    padding: 0px;
+    width: 90%;
+    &__items:nth-child(1) {
+      display: none;
+    }
+    &__items:nth-child(2) {
+      display: none;
+    }
+
+    &__bottom-button {
+      width: 100%;
+    }
+
+    &__items:nth-child(3) {
+      width: 100%;
+      max-width: none;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__button {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+}

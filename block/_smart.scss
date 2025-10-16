@@ -1,7 +1,7 @@
 .smart {
   @include display();
-  gap: 80px;
-  padding: 50px 0px;
+  gap: 100px;
+  padding: 50px 30px;
 
   &__center {
     @include display();
@@ -101,7 +101,7 @@
 @media (max-width: 1200px) {
   .smart {
     width: 90%;
-    padding: 20px;
+    padding: 0px;
     &__card {
       width: 100%;
       gap: 0px;
