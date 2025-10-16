@@ -1,0 +1,118 @@
+.contact {
+  @include display();
+  padding: 120px 160px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.378);
+  &__wrapper {
+    margin-top: 100px;
+    background-image: url(../images/contactbg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__center-box {
+    @include display();
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+
+    & span {
+      color: #DBA833;
+    }
+  }
+
+  &__input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 10px;
+    color: white;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+
+  &__input-button {
+    @include button(white, #DBA833, 132px, 8px);
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    width: 100%;  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: end;
+
+    color: #FFFFFF;
+
+
+  }
+
+  &__form {
+    @include display();
+    gap: 10px;
+    justify-content: start ;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    padding: 90px 0px;
+    width: 100%;
+    &__title {
+      font-size: 27px;
+    }
+
+    &__input-button {
+      width: 100%;
+      padding: 8px 0px;
+    
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__center-box {
+      width: 90%;
+    }
+
+    &__text {
+      text-align: start;
+    }
+  }
+}
