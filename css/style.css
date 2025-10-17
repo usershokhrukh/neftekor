@@ -193,7 +193,6 @@ header {
 @media (max-width: 1200px) {
   .intro {
     width: 90%;
-    height: 400px;
     padding: 50px 0px;
     gap: 30px;
     justify-content: center;
@@ -1027,5 +1026,131 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+}
+.intro {
+  box-shadow: 0px 0px 500px 100px rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.5098039216);
+}
+.intro__disel-wrapper {
+  background-image: url(../images/diselbg-img.png);
+}
+.intro__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.intro__box-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242424;
+  padding: 10px;
+  border: 1px dashed #DBA833;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  color: #DBA833;
+}
+
+@media (max-width: 1200px) {
+  .intro__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro__box-items {
+    text-align: center;
+  }
+}
+.oil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 160px;
+  flex-direction: column;
+  gap: 30px;
+}
+.oil__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  padding: 58px 20px;
+  border-radius: 30px;
+  border: 1px dashed;
+  background-color: rgb(255, 255, 255);
+}
+.oil__items-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+.oil__items-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+.oil__items-text {
+  max-width: 50%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #5B5B5B;
+}
+.oil__items-button {
+  background-color: white;
+  color: #DBA833;
+  padding: 13px 120px;
+  border-radius: 10px;
+  border: 1px solid #DBA833;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+}
+.oil__items-button:hover {
+  opacity: 0.7;
+}
+.oil__items-button:active {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .oil {
+    padding: 40px 0px;
+    width: 90%;
+    justify-content: center;
+  }
+  .oil__items {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .oil img {
+    position: relative;
+    left: 40px;
+    width: 220px;
+  }
+  .oil__items-title {
+    font-size: 24px;
+  }
+  .oil__items-text {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .oil__items-button {
+    padding: 13px 0px;
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */

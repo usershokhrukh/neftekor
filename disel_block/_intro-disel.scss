@@ -1,0 +1,41 @@
+
+
+.intro {
+  box-shadow: 0px 0px 500px 100px rgba(0, 0, 0, 0.623);
+  background-color: #00000082;
+  &__disel-wrapper {
+    background-image: url(../images/diselbg-img.png);
+  }
+
+  &__box {
+    @include display();
+    gap: 40px;
+  }
+
+  &__box-items {
+    @include display();
+    background-color: #242424;
+    padding: 10px;
+    border: 1px dashed #DBA833;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 400;
+    color: #DBA833;
+  }
+
+
+
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    &__box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__box-items {
+      text-align: center;
+    }
+  }
+}
