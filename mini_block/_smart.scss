@@ -1,0 +1,33 @@
+.smart {
+
+  &__mini-card {
+    gap: 20px;
+  }
+
+  &__mini-title {
+    width: 80%;
+    font-size: 24px;
+  }
+
+  &__button {
+    padding: 10px 0px;
+    width: 80%;
+  }
+
+  &__items-box {
+    @include display();
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__items-box-text {
+    // background-color: red;
+    padding: 10px 0px;
+    border-bottom: 1px solid #E2E2E2 ;
+  }
+
+  &__items-box-text:nth-child(4) {
+    border-bottom: none;
+  }
+
+}

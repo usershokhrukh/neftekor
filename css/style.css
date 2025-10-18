@@ -343,12 +343,13 @@ header {
 .smart__button {
   background-color: white;
   color: #DBA833;
-  padding: 13px 122px;
+  padding: 13px 110px;
   border-radius: 10px;
   border: 1px solid #DBA833;
   font-family: "Inter";
   font-size: 20px;
   font-weight: 700;
+  width: 70%;
 }
 .smart__title {
   font-family: "Rubik";
@@ -368,6 +369,7 @@ header {
   align-items: center;
   justify-content: space-between;
   justify-content: center;
+  align-items: start;
   flex-wrap: wrap;
 }
 .smart__items {
@@ -390,6 +392,7 @@ header {
 }
 .smart__items-text {
   width: 70%;
+  max-width: 350px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1152,5 +1155,84 @@ header {
   .oil__items-button {
     padding: 13px 0px;
     width: 70%;
+  }
+}
+.intro-mini {
+  gap: 15px;
+  justify-content: center;
+}
+.intro-mini__wrapper {
+  background-image: url(../images/minibg-img.png);
+}
+
+.smart__mini-card {
+  gap: 20px;
+}
+.smart__mini-title {
+  width: 80%;
+  font-size: 24px;
+}
+.smart__button {
+  padding: 10px 0px;
+  width: 80%;
+}
+.smart__items-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.smart__items-box-text {
+  padding: 10px 0px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.smart__items-box-text:nth-child(4) {
+  border-bottom: none;
+}
+
+.why {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 120px 160px;
+  gap: 30px;
+}
+.why__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
+}
+.why__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px dashed #DBA833;
+  border-radius: 30px;
+}
+.why__yellow-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #DBA833;
+}
+
+@media (max-width: 1200px) {
+  .why {
+    width: 90%;
+    padding: 70px 0px;
+  }
+  .why__card {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
