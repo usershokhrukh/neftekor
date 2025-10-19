@@ -1,0 +1,55 @@
+.example {
+  @include display();
+  padding: 100px 160px;
+  flex-direction: column;
+  gap: 20px;
+
+  &__card {
+    @include display();
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+
+  }
+
+  &__items {
+    @include display();
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 400px;
+  }
+
+  &__img:nth-child(odd) {
+    width: 70%;
+    max-width: 710px;
+  }
+
+  &__img-4 {
+    max-width: 710px;
+  }
+
+  
+}
+
+@media (max-width: 1200px) {
+  .example {
+    padding: 70px 0px;
+    width: 90%;
+
+    &__items {
+      flex-wrap: wrap;
+    }
+    &__img, &__img-3, &__img-4 {
+      width: 233px !important;  
+      height: 213px;
+      max-width: none;
+    }
+
+
+
+  }
+}
