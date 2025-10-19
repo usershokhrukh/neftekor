@@ -1,0 +1,70 @@
+.where {
+  @include display();
+  flex-direction: column;
+  padding: 30px 160px; 
+  gap: 20px;
+
+  &__card {
+    @include display();
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__items {
+    @include display();
+    position: relative;
+    // width: 100%;
+    
+  }
+
+  &__items img {
+    width: 100%;
+  }
+
+
+  &__items-box {
+    position: absolute;
+    bottom: 2%;
+    width: 60%;
+    max-width: 270px; 
+    padding: 20px 10px;
+    background-color: white;
+    border: 1px solid #DBA833;
+  }
+
+  
+
+
+}
+
+@media (max-width: 1200px) {
+  .where {
+    padding: 70px 0px;
+    width: 90%;
+    margin: auto;
+
+    &__items-box-text {
+      font-size: 100%;
+      line-height: 100%;
+    }
+    &__card {
+      flex-direction: column;
+    }
+
+    &__items {
+      @include display();
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__items-box-left, &__items-box-right {
+      left :27%;
+    }
+
+    &__items-box-center {
+      left: 20%;
+    }
+
+  }
+}

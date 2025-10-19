@@ -74,10 +74,19 @@
       justify-content: center;
     }
 
+    
+
     & img {
       position: relative;
       left: 40px;
       width: 220px;
+    }
+
+    &__items-pechka {
+      position: relative;
+      left: 20px !important;
+      
+
     }
 
     &__items-title {

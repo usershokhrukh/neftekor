@@ -1145,6 +1145,10 @@ header {
     left: 40px;
     width: 220px;
   }
+  .oil__items-pechka {
+    position: relative;
+    left: 20px !important;
+  }
   .oil__items-title {
     font-size: 24px;
   }
@@ -1319,5 +1323,67 @@ header {
     width: 100%;
     flex-wrap: nowrap;
     overflow: auto;
+  }
+}
+.where {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 160px;
+  gap: 20px;
+}
+.where__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.where__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.where__items img {
+  width: 100%;
+}
+.where__items-box {
+  position: absolute;
+  bottom: 2%;
+  width: 60%;
+  max-width: 270px;
+  padding: 20px 10px;
+  background-color: white;
+  border: 1px solid #DBA833;
+}
+
+@media (max-width: 1200px) {
+  .where {
+    padding: 70px 0px;
+    width: 90%;
+    margin: auto;
+  }
+  .where__items-box-text {
+    font-size: 100%;
+    line-height: 100%;
+  }
+  .where__card {
+    flex-direction: column;
+  }
+  .where__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .where__items-box-left, .where__items-box-right {
+    left: 27%;
+  }
+  .where__items-box-center {
+    left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
