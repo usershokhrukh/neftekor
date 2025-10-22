@@ -1,0 +1,18 @@
+.receive {
+  @include display();
+  padding: 70px 160px;
+  justify-content: center;
+
+  &__title {
+    padding: 30px;
+    border: 1px dashed #5B5B5B;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .receive {
+    padding: 50px 0px;
+    width: 90%;
+  }
+}
